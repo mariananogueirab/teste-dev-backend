@@ -1,23 +1,28 @@
 {
-  "name": "dev",
+  "name": "teste-dev-backend-oli-saude",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node .",
-    "dev": "nodemon .",
-    "lint": "eslint --no-inline-config --ext .js,.jsx --no-error-on-unmatched-pattern -c .eslintrc.json ."
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mariana Nogueira",
   "license": "ISC",
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@hapi/joi-date": "^2.0.1",
+    "dotenv": "^14.3.2",
     "express": "^4.17.2",
+    "joi": "^17.6.0",
     "mongodb": "^4.3.1",
     "nodemon": "^2.0.15"
   },
   "devDependencies": {
-    "eslint": "^8.8.0"
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
   }
 }
